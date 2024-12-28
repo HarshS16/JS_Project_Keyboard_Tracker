@@ -10,11 +10,20 @@
       table,
       th,
       td {
-        border: 1px solid #e7e7e7;
+        border: 3px solid black;
+        border-collapse: collapse;
+        padding: 7.5px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+        user-select: none;
+        
       }
       .project {
-        background-color: #1c1c1c;
-        color: #ffffff;
+        background-color: beige;
+        color: black;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -23,17 +32,18 @@
       }
 
       .color {
-        color: aliceblue;
+        color: black;
         display: flex;
         flex-direction: row;
       }
     </style>
   </head>
-  <body>
+  <body style="background-color: beige;">
+    <h1 style="text-align: center; " style="padding: 50px;">Keyboard Tracker</h1>
     
     <div class="project">
       <div id="insert">
-        <div class="key">Press the key and watch magic</div>
+        <h1><div class="key">Press the key and watch magic</div></h1>
       </div>
     </div>
 
